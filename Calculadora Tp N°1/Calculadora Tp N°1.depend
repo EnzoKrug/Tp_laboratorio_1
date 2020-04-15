@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1586925040 source:c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\calculadora tp n°1\funciones.c
+	"Funciones.h"
+
+1586925885 c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\calculadora tp n°1\funciones.h
+
+1586924590 source:c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\calculadora tp n°1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+
