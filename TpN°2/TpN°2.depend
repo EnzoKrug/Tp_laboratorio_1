@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1589601579 source:c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\mis repositorios de github\tp_laboratorio_1\tpn°2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"ArrayEmployees.h"
+
+1588820705 source:c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\mis repositorios de github\proyecto_funcionesvalidadas\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1589601553 source:c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\mis repositorios de github\tp_laboratorio_1\tpn°2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"utn.h"
+
+1588833256 c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\mis repositorios de github\tp_laboratorio_1\tpn°2\utn.h
+
+1589601469 c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\mis repositorios de github\tp_laboratorio_1\tpn°2\arrayemployees.h
+
+1588833302 source:c:\users\usuario\desktop\cursada 1cuatrim utn\laboratorio 1 - programacion 1\mis repositorios de github\tp_laboratorio_1\tpn°2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
