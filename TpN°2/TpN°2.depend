@@ -29,3 +29,28 @@
 	<stdlib.h>
 	<string.h>
 
+1591291107 source:c:\users\alan krug\desktop\tp_laboratorio_1\tpn°2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"utn.h"
+
+1591290904 c:\users\alan krug\desktop\tp_laboratorio_1\tpn°2\arrayemployees.h
+
+1591290904 c:\users\alan krug\desktop\tp_laboratorio_1\tpn°2\utn.h
+
+1591291135 source:c:\users\alan krug\desktop\tp_laboratorio_1\tpn°2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"ArrayEmployees.h"
+
+1591290904 source:c:\users\alan krug\desktop\tp_laboratorio_1\tpn°2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
