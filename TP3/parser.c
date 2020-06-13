@@ -15,7 +15,7 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee, int* pr
     {
         do
         {
-            if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",auxiliarId,auxiliarNombre,auxiliarSueldo,auxiliarHorasTrabajadas) == 4)
+            if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",auxiliarId,auxiliarNombre,auxiliarHorasTrabajadas,auxiliarSueldo) == 4)
             {
                 pEmployee = employee_newParametrosTxt(auxiliarId,auxiliarNombre,auxiliarSueldo,auxiliarHorasTrabajadas);
                 if(pEmployee != NULL)
@@ -34,7 +34,7 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee, int* pr
     return retorno;
 }
 
-int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee)
+int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee, int* proximoId)
 {
     int retorno = -1;
     Employee* pEmployee;
@@ -51,14 +51,12 @@ int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee)
             fin = fread(pEmployee,sizeof(Employee),1,pFile);
             if(fin != 0)
             {
-                if(pEmployee != NULL)
-                {
-                    ll_add(pArrayListEmployee,pEmployee);
-                   // printf("\nid: %d nombre: %s \n",pEmployee->id,pEmployee->nombre,pEmployee->sueldo);
-                    retorno = 0;
-                }
+                ll_add(pArrayListEmployee,pEmployee);
+                retorno = 0;
+                //printf("\nid: %d nombre: %s \n",pEmployee->id,pEmployee->nombre,pEmployee->sueldo);
             }
         }while(!feof(pFile));
     }
     return retorno;
 }
+

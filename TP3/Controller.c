@@ -28,7 +28,7 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee, int* pro
 }
 
 
-int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
+int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee, int* proximoId)
 {
     int retorno = -1;
     FILE* pFile;
@@ -38,7 +38,7 @@ int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
         pFile = fopen(path,"rb");
         if(pFile != NULL)
         {
-            if(!parser_EmployeeFromBinary(pFile,pArrayListEmployee))
+            if(!parser_EmployeeFromBinary(pFile,pArrayListEmployee,proximoId))
             {
                 retorno = 0;
             }
@@ -123,7 +123,7 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
                     }
                     break;
                     case 2:
-                    if(!utn_getNumero(&sueldo,"\nSueldo del empleado?","\nERROR.",1,50000,2))
+                    if(!utn_getNumero(&sueldo,"\nSueldo del empleado?","\nERROR.",1,QTY_SUELDO,2))
                     {
                         if(!employee_setSueldo(pEmployee,sueldo))
                         {
@@ -137,7 +137,7 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
                     }
                     break;
                     case 3:
-                    if(!utn_getNumero(&horasTrabajadas,"\nHoras trabajadas?","\nERROR.",1,24,2))
+                    if(!utn_getNumero(&horasTrabajadas,"\nHoras trabajadas?","\nERROR.",1,QTY_HORAS,2))
                     {
                         if(!employee_setHorasTrabajadas(pEmployee,horasTrabajadas))
                         {
@@ -408,7 +408,7 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
                   !employee_getHorasTrabajadas(pEmployee,&auxiliarHorasTrabajadas))
                 {
                     fwrite(pEmployee,sizeof(Employee),1,pFile);
-                    printf("\nid: %d - nombre: %s",auxiliarId,auxiliarNombre);
+                    //printf("\nid: %d - nombre: %s",auxiliarId,auxiliarNombre);
                     retorno = 0;
                 }
             }

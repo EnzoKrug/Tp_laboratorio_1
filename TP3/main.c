@@ -34,7 +34,7 @@ int main()
         {
         case 1:
 
-            if(!controller_loadFromText("data.csv",listaEmployee,&idEmployee))
+            if(!controller_loadFromText("dataa.csv",listaEmployee,&idEmployee))
             {
                 printf("\nSe cargo el archivo exitosamente.");
             }
@@ -44,7 +44,7 @@ int main()
             }
             break;
         case 2:
-            if(!controller_loadFromBinary("dataBin.csv",listaEmployee))
+            if(!controller_loadFromBinary("dataaBin.csv",listaEmployee,&idEmployee))
             {
                 printf("\nSe cargo el archivo binario exitosamente.");
             }
@@ -132,7 +132,7 @@ int main()
             }
             break;
         case 8:
-            if(!controller_saveAsText("data.csv",listaEmployee))
+            if(!controller_saveAsText("dataa.csv",listaEmployee))
             {
                 printf("\nSe guardaron los datos exitosamente en el archivo.");
             }
@@ -142,7 +142,7 @@ int main()
             }
             break;
         case 9:
-            if(!controller_saveAsBinary("dataBin.csv",listaEmployee))
+            if(!controller_saveAsBinary("dataaBin.csv",listaEmployee))
             {
                 printf("\nSe guardaron los datos exitosamente en el archivo binario.");
             }
