@@ -34,11 +34,11 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee, int* pr
     return retorno;
 }
 
-int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee, int* proximoId)
+int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee)
 {
     int retorno = -1;
     Employee* pEmployee;
-    int i;
+    int fin;
     char auxiliarId[4096];
 	char auxiliarNombre[4096];
 	char auxiliarSueldo[4096];
@@ -47,25 +47,16 @@ int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee, int* 
     {
         do
         {
-            i = 0;
-            pEmployee = ll_get(pArrayListEmployee,i);
-            if(fread(pEmployee,sizeof(Employee),1,pFile) == 1)
+            pEmployee = employee_new();
+            fin = fread(pEmployee,sizeof(Employee),1,pFile);
+            if(fin != 0)
             {
-                pEmployee = employee_newParametrosTxt(auxiliarId,auxiliarNombre,auxiliarSueldo,auxiliarHorasTrabajadas);
                 if(pEmployee != NULL)
                 {
-                   if(atoi(auxiliarId) >= *proximoId)
-                    {
-                        ll_add(pArrayListEmployee,pEmployee);
-                        retorno = 0;
-                        *proximoId = atoi(auxiliarId)+1;
-                    }
+                    ll_add(pArrayListEmployee,pEmployee);
+                   // printf("\nid: %d nombre: %s \n",pEmployee->id,pEmployee->nombre,pEmployee->sueldo);
+                    retorno = 0;
                 }
-                i++;
-            }
-            else
-            {
-                break;
             }
         }while(!feof(pFile));
     }

@@ -2,9 +2,9 @@
 #define employee_H_INCLUDED
 
 #define NOMBRE_LEN 128
-#define QTY_SUELDO 50000
-#define QTY_HORAS 120
-#define QTY_EMPLOYEE 10
+#define QTY_SUELDO 100000
+#define QTY_HORAS 250
+#define QTY_EMPLOYEE 1000
 #include "LinkedList.h"
 
 typedef struct

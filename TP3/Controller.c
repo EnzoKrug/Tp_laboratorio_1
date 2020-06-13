@@ -28,16 +28,17 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee, int* pro
 }
 
 
-int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee, int* proximoId)
+int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
     int retorno = -1;
     FILE* pFile;
     if(path != NULL && pArrayListEmployee != NULL)
     {
+        ll_clear(pArrayListEmployee);
         pFile = fopen(path,"rb");
         if(pFile != NULL)
         {
-            if(!parser_EmployeeFromBinary(pFile,pArrayListEmployee,proximoId))
+            if(!parser_EmployeeFromBinary(pFile,pArrayListEmployee))
             {
                 retorno = 0;
             }
@@ -59,7 +60,7 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, int* idEmployee)
     {
         if(!utn_getNombre(nombre,NOMBRE_LEN,"\nNombre del empleado?","\nERROR.",2) &&
            !utn_getNumero(&horasTrabajadas,"\nHoras trabajadas?","\nERROR.",1,250,2) &&
-           !utn_getNumero(&sueldo,"\nSueldo del empleado?","\nERROR.",1,150000,2))
+           !utn_getNumero(&sueldo,"\nSueldo del empleado? [1000/100000]","\nERROR.",1000,100000,2))
        {
            pEmployee = employee_newParametros(*idEmployee,nombre,horasTrabajadas,sueldo);
            if(pEmployee != NULL)
@@ -407,6 +408,7 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
                   !employee_getHorasTrabajadas(pEmployee,&auxiliarHorasTrabajadas))
                 {
                     fwrite(pEmployee,sizeof(Employee),1,pFile);
+                    printf("\nid: %d - nombre: %s",auxiliarId,auxiliarNombre);
                     retorno = 0;
                 }
             }
