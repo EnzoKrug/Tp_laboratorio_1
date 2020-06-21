@@ -48,41 +48,48 @@ int ll_len(LinkedList* this)
                         (pElement) Si funciono correctamente
  *
  */
- /*
-static Node* getNode(LinkedList* this, int nodeIndex)
-{
-    Node* pNode = NULL;
-    int len;
-    int i;
-    len = ll_len(this);
-    if(this != NULL && nodeIndex > -1 && nodeIndex < len)
-    {
-        pNode = this->pFirstNode;
-        for(i=0;i<nodeIndex;i++)
-        {
-            pNode = pNode->pNextNode;
-        }
-    }
-    return pNode;
-}
-*/
 static Node* getNode(LinkedList* this, int nodeIndex)
 {
     Node* pNode = NULL;
     int len;
     int i = 0;
-    len = ll_len(this);
-    if(this != NULL && nodeIndex > -1 && nodeIndex < len)
+    if(this != NULL)
     {
-        pNode = this->pFirstNode;
-        while(i != nodeIndex)
+        len = ll_len(this);
+        if(nodeIndex > -1 && nodeIndex < len)
         {
-            pNode = pNode->pNextNode;
-            i++;
+            pNode = this->pFirstNode;
+            while(i != nodeIndex)
+            {
+                pNode = pNode->pNextNode;
+                i++;
+            }
         }
     }
     return pNode;
 }
+/*
+static Node* getNode(LinkedList* this, int nodeIndex)
+{
+    Node* pNode = NULL;
+    int len;
+    int i = 0;
+    if(this != NULL)
+    {
+        len = ll_len(this);
+        if(nodeIndex > -1 && nodeIndex < len)
+        {
+            pNode = this->pFirstNode;
+            while(i != nodeIndex)
+            {
+                pNode = pNode->pNextNode;
+                i++;
+            }
+        }
+    }
+    return pNode;
+}*/
+
 /** \brief  Permite realizar el test de la funcion getNode la cual es privada
  *
  * \param this LinkedList* Puntero a la lista
