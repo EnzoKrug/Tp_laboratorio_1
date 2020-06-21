@@ -243,7 +243,7 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1592019731 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\controller.c
+1592352049 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\controller.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -253,21 +253,21 @@
 	"parser.h"
 	"utn.h"
 
-1591806389 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\linkedlist.h
+1592352049 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\linkedlist.h
 
-1592012744 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\employee.h
+1592352049 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\employee.h
 	"LinkedList.h"
 
-1592019596 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\parser.h
+1592352049 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\parser.h
 
-1591957495 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\employee.c
+1592352049 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\employee.c
 	<stdlib.h>
 	"Employee.h"
 	<string.h>
 	<stdio.h>
 	"LinkedList.h"
 
-1592019694 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\main.c
+1592352049 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -275,18 +275,18 @@
 	"Employee.h"
 	"string.h"
 
-1592019739 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\controller.h
+1592352049 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\controller.h
 
-1592020648 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\parser.c
+1592352049 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 
-1591939554 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\utn.c
+1592352049 source:c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1591939506 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\utn.h
+1592352049 c:\users\usuario\desktop\utn repo_github\tp_laboratorio_1\tp3\utn.h
 

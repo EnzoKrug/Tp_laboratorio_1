@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1592702807 source:c:\users\usuario\desktop\prueba_linkedlist\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1592702626 c:\users\usuario\desktop\prueba_linkedlist\linkedlist.h
+
+1592703103 source:c:\users\usuario\desktop\prueba_linkedlist\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"parser.h"
+	"utn.h"
+
+1592703131 c:\users\usuario\desktop\prueba_linkedlist\controller.h
+
+1592703022 c:\users\usuario\desktop\prueba_linkedlist\employee.h
+	"LinkedList.h"
+
+1592703076 c:\users\usuario\desktop\prueba_linkedlist\parser.h
+
+1592703173 c:\users\usuario\desktop\prueba_linkedlist\utn.h
+
+1592702989 source:c:\users\usuario\desktop\prueba_linkedlist\employee.c
+	<stdlib.h>
+	"Employee.h"
+	<string.h>
+	<stdio.h>
+	"LinkedList.h"
+
+1592702916 source:c:\users\usuario\desktop\prueba_linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"string.h"
+
+1592703052 source:c:\users\usuario\desktop\prueba_linkedlist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1592703240 source:c:\users\usuario\desktop\prueba_linkedlist\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
